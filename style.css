@@ -1,0 +1,115 @@
+.disabled{
+    visibility: hidden;
+}
+.main{
+    width:100vw;
+    height:100vh;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Circular spotify text medium;
+}
+.music-player-box {
+    backdrop-filter: blur(50px);
+    padding-top:10%;
+    padding-right:8%;   
+    padding-left:8%;
+ 
+  height:100%;
+  background:linear-gradient(rgb(214, 47, 14)  ,black 60%);
+  display: flex;
+  flex-direction: column;
+  
+}
+img{
+    border-radius: 18px;
+}
+#credit{
+    margin-top: 8%;
+    & h3{
+          font-size:1.6rem ;
+          text-transform: capitalize;
+          color:white;
+          font-weight: 300;
+          cursor:pointer;
+    }
+    & p:hover{
+        text-decoration: underline;
+    }
+    & h3:hover{
+        text-decoration: underline;
+    }
+    & p{
+        text-transform: capitalize;
+        color:white;
+        font-weight: 300;
+        cursor:pointer
+    }
+}
+.music-player {
+  margin-top:7%;
+&  {
+    
+    display: block;
+   width:100vw;
+}
+}
+#music-range{
+    display: block;
+    width:80vw;
+    accent-color: rgb(20, 213, 20);
+}
+.play-forward-stop-backward{
+    width:80%;
+    margin-top: 20px;
+  display: flex;
+  /* background-color: pink; */
+  justify-content: space-between;
+  /* margin-left:3rem; */
+    & i:nth-child(1){
+        font-size: 3rem;
+        margin-top: 8px;
+        margin-left: 30px;
+        
+
+    }
+    & i:nth-child(1):hover{
+        color:white;
+    }
+    & i:nth-child(3):hover{
+        color:white;
+    }
+    & i{
+        color:rgb(198, 191, 191);
+        font-size: 4rem;
+        justify-content: center;
+    }
+    & i:nth-child(3){
+        font-size: 3rem;
+         margin-top: 8px;
+         margin-right: 30px;
+    }
+}
+
+.like-loop-lyrics {
+    margin-top: 28px;
+    display: flex;
+    width:79%;
+    justify-content: space-between;
+  & i{
+    /* justify-content: space-between; */
+    font-size: 2rem;
+    color:white;
+
+  }
+  & .ri-loop-right-line {
+    color:white;
+  }
+  & .fa-heart {
+    color:white;
+  }
+}
